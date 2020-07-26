@@ -1,0 +1,24 @@
+body {
+    background: #ccc;
+    text-align: center;
+    overflow: hidden;
+}
+
+#canvas-contain {
+
+    display: flex;
+    border: 2px solid black;
+    cursor: crosshair;
+    justify-content: center;
+    align-content: center;
+}
+
+.controls {
+    width: 10%;
+    height: 100vh;
+    position: absolute;
+    background-color: #f9f9f9;
+    cursor: pointer;
+    border: 2px solid #cacaca;
+    border-radius: 5px;
+}

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script defer src="app.js"></script>
+    <title>
+        Mandala Maker
+    </title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+</head>
+
+<body>
+    <div class="controls">
+        <div class="form-group control">
+            <label>Color</label>
+            <input class="color form-control" type="color" name="color" value="#000000" />
+        </div>
+        <div class="form-group control">
+            <label>Line Width</label>
+            <input class="input form-control" type="number" name="width" min="1" max="10" step="1" value="3" />
+        </div>
+        <div class="buttons">
+            <button class="button btn btn-outline-dark" type="button" onclick="download();">Save</button>
+            <button class="button btn btn-outline-dark" type="button" onclick="clearCanvas();">Clear</button>
+        </div>
+    </div>
+    <div id="canvas-contain">
+        <canvas id="canvas" height="750" width="750">
+            <p>Your browser doesn't support canvas.</p>
+        </canvas>
+    </div>
+</body>
+
+</html>
